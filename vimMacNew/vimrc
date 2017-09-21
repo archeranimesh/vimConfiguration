@@ -1,3 +1,7 @@
+" Enable filetype plugins
+filetype plugin on
+filetype indent on
+
 " https://gist.github.com/rocarvaj/2513367
 " disable vi compatibility (emulation of old bugs)
 set nocompatible
@@ -30,7 +34,23 @@ set noswapfile
 
 " http://vim.wikia.com/wiki/Example_vimrc
 " Better command-line completion
-set wildmenu
-" Show partial commands in the last line of the screen
-set showcmd
+" https://dougblack.io/words/a-good-vimrc.html
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+set ignorecase          " Ignore case when searching
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR> 
+set number 		" show line numbers
+set showcmd             " show command in bottom bar"
+set wildmenu            " visual autocomplete for command menu"
+set lazyredraw 		" redraw only when we need to."
+" move vertically by visual line
+nnoremap j gj
+nnoremap k gk
 
+" No annoying sound on errors
+" https://github.com/amix/vimrc/blob/master/vimrcs/basic.vim
+set noerrorbells
+set novisualbell
+set t_vb=
+set tm=500
