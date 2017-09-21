@@ -1,0 +1,26 @@
+" https://gist.github.com/rocarvaj/2513367
+" disable vi compatibility (emulation of old bugs)
+set nocompatible
+syntax on
+" Stop Key movement with arrow key
+"http://stackoverflow.com/questions/5367760/vim-disabling-the-cursor-arrow-keys-but-only-for-navigation
+
+" Disable Arrow keys in Escape mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" Disable Arrow keys in Insert mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" set ruler for details of the file
+set ruler
+
+" Turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
