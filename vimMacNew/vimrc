@@ -68,4 +68,19 @@ set tm=500
 
 " Pathogen Plugin
 execute pathogen#infect()
-
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NerdTree Configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+autocmd vimenter * NERDTree 					"open a NERDTree automatically when vim starts up
+autocmd vimenter * if !argc() | NERDTree | endif 		"open a NERDTree automatically when vim starts up if no files were specified
+map <C-n> :NERDTreeToggle<CR>					"map a specific key or shortcut to open NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif "close vim if the only window left open is a NERDTree
+autocmd BufWinEnter * NERDTreeMirror				" Start NerdTree in every tab
+autocmd VimEnter * wincmd p					" cursor always starts in the NERDTree window
+"Easy window navigation, Just use CTRL + hjkl for navigation inplace of CTRL +
+"W
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
