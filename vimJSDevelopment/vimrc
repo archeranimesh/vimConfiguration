@@ -59,3 +59,7 @@ set novisualbell
 set t_vb=
 set tm=500
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Pathogen Plugin Configuration
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+execute pathogen#infect()
