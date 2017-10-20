@@ -4,6 +4,7 @@
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
+let $VIMRUNTIME="/home/animeshb/bin/share/vim/vim80"
 
 " https://gist.github.com/rocarvaj/2513367
 set nocompatible
@@ -58,6 +59,11 @@ set noerrorbells
 set novisualbell
 set t_vb=
 set tm=500
+
+" Enable Zenburn color.
+set t_Co=256
+colors zenburn
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Pathogen Plugin Configuration

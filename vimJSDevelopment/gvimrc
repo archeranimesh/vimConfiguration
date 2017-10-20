@@ -1,0 +1,10 @@
+" http://vim.wikia.com/wiki/Maximize_or_set_initial_window_size
+set lines=999 columns=999
+
+" https://stackoverflow.com/questions/13525518/how-to-hide-the-menu-tool-bar-of-gvim
+set guioptions -=m
+set guioptions -=T
+
+" https://superuser.com/questions/322947/gvim-shift-insert-dump-s-insert-instead-of-the-clipboard-text
+" map <silent> <S-Insert> "+p
+imap <silent> <S-Insert> <Esc>"+pa
