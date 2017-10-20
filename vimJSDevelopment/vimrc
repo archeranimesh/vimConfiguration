@@ -64,6 +64,14 @@ set tm=500
 set t_Co=256
 colors zenburn
 
+" Opening multiple file
+" http://vim.wikia.com/wiki/Project_browsing_using_find
+set path=$PWD/**
+
+" http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
+set wildmenu
+" set wildmode=list:longest,full
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Pathogen Plugin Configuration
