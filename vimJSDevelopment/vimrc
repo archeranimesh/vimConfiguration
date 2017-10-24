@@ -1,4 +1,5 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 
 " => General Configuration
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable filetype plugins
@@ -70,6 +71,17 @@ set path=$PWD/**
 " http://vim.wikia.com/wiki/Great_wildmode/wildmenu_and_console_mouse
 set wildmenu
 " set wildmode=list:longest,full
+"
+
+" https://stackoverflow.com/questions/3446320/in-vim-how-to-map-save-to-ctrl-s
+" Map Ctrl + S to save a file, if terminal freezes press ctrl + Q
+"
+noremap <silent> <C-S>          :update<CR>
+vnoremap <silent> <C-S>         <C-C>:update<CR>
+inoremap <silent> <C-S>         <C-O>:update<CR>
+
+" https://jeffkreeftmeijer.com/vim-number/
+set number relativenumber
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
