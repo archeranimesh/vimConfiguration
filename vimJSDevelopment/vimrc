@@ -36,6 +36,11 @@ endfunction
 set nobackup
 set nowb
 set noswapfile
+" https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces
+set tabstop=4 		" show existing tab with 4 spaces width
+set shiftwidth=4 	" when indenting with '>', use 4 spaces width
+set expandtab 		" On pressing tab, insert 4 spaces
+set softtabstop=4 	" Sets the number of columns for a TAB."
 
 " http://vim.wikia.com/wiki/Example_vimrc
 " Better command-line completion
@@ -49,6 +54,7 @@ set number 		" show line numbers
 set showcmd             " show command in bottom bar"
 set wildmenu            " visual autocomplete for command menu"
 set lazyredraw 		" redraw only when we need to."
+set cursorline      " Show visual line under the curson.
 " move vertically by visual line
 nnoremap j gj
 nnoremap k gk
