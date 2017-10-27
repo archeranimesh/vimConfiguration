@@ -89,6 +89,9 @@ inoremap <silent> <C-S>         <C-O>:update<CR>
 " https://jeffkreeftmeijer.com/vim-number/
 set number relativenumber
 
+" https://stackoverflow.com/questions/5017009/confusion-about-vim-folding-how-to-disable
+set nofoldenable        " disable folding
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Pathogen Plugin Configuration
